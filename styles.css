@@ -1,5 +1,4 @@
-p { font-family: Arial; }
-h1 { text-align: center;} 
+h1 { text-align: center; font-family: Arial;} 
 img { max-width: 30%;  height: auto; 
     display: block; margin-left: auto;
     margin-right: auto; width: 50%;
@@ -14,28 +13,32 @@ ul{
 body {
     margin: 0;
     padding: 0;
-    background-color: #DBF9FC;
+    background-color: white;
+    font-family: Arial;
 }
 
 .container {
     display: flex;
+    background-image: url("poincare_section.png");
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #4c714c;
-    color: #fff;
-    box-sizing: border-box;
-    position: fixed;
-}
-
-.content {
+.content{
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
     margin-left: 200px;
     text-align: justify;
     max-width: 700px;
+    color: white
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(1, 1, 1, 0.4);
+    color: #ffffff;
+    box-sizing: border-box;
+    position: fixed;
+    font-family: Arial;
 }
 
 .sidebar a {
@@ -43,8 +46,83 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px;
+    font-family: Arial;
 }
 
 .sidebar a:hover {
-    background-color: #2980b9;
+    background-color: rgba(128, 0, 128, 0.4);
+}
+
+.titlebox {
+    width: auto;
+    color: #000;
+    position: top;
+    font-family: Arial;
+}
+
+.titlebox a {
+    padding: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: white;
+  background-size: cover;
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.embiggen {
+  font-size: 4em;
+  text-shadow: 0 0 40px #ffbab3;
+}
+article {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto 50px;
+}
+
+.subtitle {
+  margin: 0 0 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.amp {
+  margin: 0 0 0.25em 0;
+}
+.amp span {
+  font-size: 0.7em;
+}
+
+hr {
+  color: white;
 }
