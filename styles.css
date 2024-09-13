@@ -20,6 +20,13 @@ body {
 .container {
     display: flex;
     background-image: url("poincare_section.png");
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.centre_box {
+  max-width: fit-content;
+  margin-inline: auto;
 }
 
 .content{
